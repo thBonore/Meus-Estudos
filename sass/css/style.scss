@@ -1,0 +1,19 @@
+$color-default:#C6538C;
+
+body{
+    background-color: $color-default;
+}
+#header{
+    background-color: white;
+    position: absolute;
+    padding:0 15;
+    p{
+        color: $color-default;
+        font-size: large;
+        font-family: sans-serif;
+    }
+
+    &:hover{
+    	background-color: $color-default;
+    }
+}

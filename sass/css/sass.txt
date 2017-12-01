@@ -1,0 +1,4 @@
+cd DIRETORIO DO ARQUIVO SASS
+
+sass style.scss:style.css
+sass --watch style.scss:style.css
