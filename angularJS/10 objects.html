@@ -1,0 +1,10 @@
+<script src="angular.min.js"></script>
+<div data-ng-app="" data-ng-init="person={firstName:'John',lastName:'Doe'}">
+	AngularJS objects are like JavaScript objects:
+	<p>The first name is {{ person.firstName }}</p>
+	<p>The last name is {{ person.lastName }}</p>
+
+	Same example using ng-bind:
+	<p>The first name is <span data-ng-bind=" person.firstName"></span></p>
+	<p>The last name is <span data-ng-bind=" person.lastName"></span></p>
+</div>

@@ -1,0 +1,10 @@
+<script src="angular.min.js"></script>
+<div data-ng-app="" data-ng-init="quantity=1;cost=5">
+	AngularJS numbers are like JavaScript numbers:
+	<p>Total in dollar: {{ quantity * cost }}</p>
+
+	Same exmaple using data-ng-bind:
+	<p>Total in dollar: <span data-ng-bind="quantity * cost"></span></p>
+
+	Using ng-init is not very common. You will learn a better way to initialize data in the chapter about controllers.
+</div>
