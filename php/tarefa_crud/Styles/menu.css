@@ -1,0 +1,28 @@
+#copo
+{
+    -webkit-box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 11px 0px rgba(0,0,0,0.75);
+    background-color : #AB6A49;
+    margin-left: -160px;
+    position: absolute;
+    top: 0%;
+    left: 46.5%;
+    padding : 10px;
+    border-radius: 15px;
+    border-width: medium;
+	border-style: solid;
+	border-color: white;
+    font-family: Gill Sans MT;
+    font-size: 25px;
+    color: white;
+}
+#menu 
+{
+    list-style: none;
+}
+#menu li
+{
+    display: inline;
+    padding : 20px 20px 20px 20px;  
+}

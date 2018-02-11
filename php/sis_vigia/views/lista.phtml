@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="full">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SisVigia - O seu sistema de vigias</title>
+    <link href="template/css/default.css" rel="stylesheet">
+    <link href="template/css/bootstrap.min.css" rel="stylesheet">
+    <script src="template/js/bootstrap.min.js"></script>
+    <script src="template/js/jquery.min.js"></script>
+  </head>
+  <body style="background: none">
+    <div class="container" style="margin-top: 100px ">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="panel panel-default" id="block">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="text-align: center">
+                <a href="?controle=lista&acao=sair">
+                  <span class="glyphicon glyphicon-log-out" aria-hidden="true" style="float:left; font-size: 14px; line-height: 1.2"></span>
+                </a>
+                Vigias cadastrados
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped" id="table_list">
+                  <thead>
+                    <tr>
+                      <th class="col-md-4">Nome</th>
+                      <th class="col-md-5">E-mail</th>
+                      <?php
+                        if ( $_SESSION["adm"] == '1' )
+                        {
+                          ?>
+                          <th class="col-md-3">Ações</th>
+                          <?php
+                        }
+                      ?>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                      if ( isset( $lista_usuarios ) )
+                      {
+                        foreach ( $lista_usuarios as $usuario )
+                        {
+                          ?>
+                          <tr>
+                            <td><?=$usuario["usuario_nome"]." ".$usuario["usuario_sobrenome"]?></td>
+                            <td><?=$usuario["usuario_email"]?></td>
+                            <?php
+                              if ( $_SESSION["adm"] == '1' )
+                              {
+                                ?>
+                                <td>
+                                  <?php
+                                    if ( $_SESSION["id"] != $usuario["usuario_id"] )
+                                    {
+                                      ?>
+                                      <button class="btn btn-xs btn-default" onclick="location.href='?controle=lista&acao=passaradm&id=<?=$usuario['usuario_id']?>'">Passar ADM</button>
+                                      <button class="btn btn-xs btn-default" onclick="location.href='?controle=lista&acao=excluir&id=<?=$usuario['usuario_id']?>'">Excluir</button>
+                                      <?php
+                                    }
+                                  ?>
+                                </td>
+                                <?php
+                              }
+                            ?>
+                          </tr>
+                          <?php
+                        }
+                      }
+                    ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
