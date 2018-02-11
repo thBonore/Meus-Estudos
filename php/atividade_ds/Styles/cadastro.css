@@ -1,0 +1,15 @@
+body{
+	background-image: url("../Images/background.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;	
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+a:hover{
+    color: black; 
+}

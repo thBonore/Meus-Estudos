@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="full">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SisVigia - Cadastro</title>
+    <link href="template/css/default.css" rel="stylesheet">
+    <link href="template/css/bootstrap.min.css" rel="stylesheet">
+    <script src="template/js/bootstrap.min.js"></script>
+    <script src="template/js/jquery.min.js"></script>
+  </head>
+  <body style="background: none">
+    <div class="container" style="margin-top: 175px ">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="text-align: center">
+                <a href="?controle=login">
+                  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="float:left; font-size: 12px; line-height: 1.2"></span>
+                </a>
+                Cadastro
+              </h3>
+            </div>
+            <div class="panel-body">
+              <form method="POST" action="?controle=cadastro&acao=cadastrar">
+                <div class="input-group" title="Insira aqui seu nome e sobrenome">
+  			          <span class="input-group-addon" id="inputNome-addon">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  </span>
+                  <input name="nome" id="inputNome" class="form-control" placeholder="Digite seu nome..." aria-describedby="inputNome-addon" autofocus="" required="" type="nome" style="width:50%">
+	                <input name="sobrenome" id="inputNome" class="form-control" placeholder="Digite seu sobrenome..." aria-describedby="inputSobrenome-addon" required="" type="sobrenome" style="width:50%">
+    					  </div>
+                <div class="input-group" title="Insira aqui o email da sua conta" style="margin-top: 10px">
+  			          <span class="input-group-addon" id="inputEmail-addon">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                  </span>
+	                <input name="email" id="inputEmail" class="form-control" placeholder="Digite seu email..." aria-describedby="inputEmail-addon" required="" type="email">
+    					  </div>
+                <div class="input-group" title="Insira aqui a senha da sua conta" style="margin-top: 10px">
+  			          <span class="input-group-addon" id="inputSenha-addon">
+                    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                  </span>
+	                <input name="senha" id="inputSenha" class="form-control" placeholder="Digite sua senha..." aria-describedby="inputSenha-addon" required="" type="password">
+    					  </div>
+                <div class="input-group" title="Repita aqui a senha da sua conta" style="margin-top: 10px">
+  			          <span class="input-group-addon" id="inputSenha-addon">
+                    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+                  </span>
+	                <input name="r_senha" id="inputSenha" class="form-control" placeholder="Repita sua senha..." aria-describedby="inputSenha-addon" required="" type="password">
+    					  </div>
+                <button name="btn_cadastro" class="btn btn-default form-control" type="submit" title="Ao preencher os campos acima, clique aqui para fazer seu cadastro" style="margin-top: 10px">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

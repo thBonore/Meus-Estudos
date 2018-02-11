@@ -1,0 +1,52 @@
+input[type=text]
+{     
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    color: #AB6A49;
+}
+input[type=password]
+{     
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    color: #AB6A49;
+}
+input[type=date]
+{     
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    color: #AB6A49;
+}
+button {
+    margin : 10px;
+    width:70px;
+    height:23px;
+    background-color: #AB6A49;
+    border-radius: 5px;
+    border-width: 2px;;
+	border-style: solid;
+    border-color: white;
+    color: white;
+}
+button:hover {
+    border-color: black;
+    color: black;
+
+}
+a
+{
+    text-decoration: none;
+    color: white; 
+}
+a:hover
+{
+    color: black; 
+}
+#marquee
+{
+    font-family: Gill Sans MT;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+}

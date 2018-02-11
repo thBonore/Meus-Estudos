@@ -1,0 +1,28 @@
+.full {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html{
+    background: url("../imagens/background.jpg") no-repeat center center fixed;
+}
+#block > .panel-body {
+  padding: 0;
+}
+#block > .panel-body > .table-responsive > table,
+#list > .panel-body > .table-responsive > table {
+  margin: 0;
+  border-top: none;
+}
+#block > .panel-body > .table-responsive > table > thead > form > tr > th,
+#block > .panel-body > .table-responsive > table > tbody > form > tr > td,
+#block > .panel-body > .table-responsive > table > thead > tr > th,
+#block > .panel-body > .table-responsive > table > tbody > tr > td {
+  vertical-align: middle;
+}
+#table_list > tbody > tr > td {
+  padding: 4px 8px 4px 8px;
+  line-height: 1.8;
+  height: 37px;
+}
