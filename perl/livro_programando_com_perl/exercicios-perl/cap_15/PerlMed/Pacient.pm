@@ -1,4 +1,4 @@
-package PerlMed::Medic;
+package PerlMed::Pacient;
 
 use 5.18.0;
 use warnings;
@@ -8,7 +8,7 @@ sub new {
 	my %args = @_;
 	my $self = {
 		id => ($args{id} or 0),
-		name => ($args{name} or 'Jorge')
+		name => ($args{name} or 'João')
 	};
 	bless $self, $class;
 }
@@ -18,4 +18,3 @@ sub name {
 	$self->{name} = shift if @_;
 	$self->{name};
 }
-1
